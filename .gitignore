@@ -1,8 +1,8 @@
 # Files to be excluded from the repository
 
-*.out          # Executable files
-*~             # Backup files
-# *.txt        # Text files
-*.log          # Compilation errors file
-.tern-port     # Intelligen JavaScript tooling
+*.out
+*~
+# *.txt
+*.log
+.tern-port
 node_modules/*
