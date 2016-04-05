@@ -10,8 +10,10 @@
     <div id="mocha"></div>
     <script src="../javascript/mocha.js"></script>
     <script src="../javascript/chai.js"></script>
-    <script src="../../csv.js"></script> <!-- Para que funcione en la rama master -->
-    <script src="../csv.js"></script>   <!-- Para que funcione en la rama gh-pages -->
+    <script src="../javascript/blanket.js"
+           data-cover-adapter="../javascript/mocha-blanket.js"></script>
+    <script src="../../csv.js" data-cover></script> <!-- Para que funcione en la rama master -->
+    <script src="../csv.js" data-cover></script>   <!-- Para que funcione en la rama gh-pages -->
     <script>mocha.setup('bdd')</script>
     <script src="../javascript/tests.js"></script>
     <script>
