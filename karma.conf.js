@@ -19,12 +19,14 @@ module.exports = function(config) {
       'tests/javascript/*.js',
       'tests/testIndex/index.html',
       'tests/stylesheet/mocha.css',
-      'tests/**/*js.'
+      'tests/**/*.js'
     ],
 
 
     // list of files to exclude
     exclude: [
+      'gulpfile.js',
+      'main.js'
     ],
 
 
