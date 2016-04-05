@@ -15,7 +15,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      //'*.js',
+      '*.js',
       'javascript/*.js',
       'tests/testIndex/index.html',
       'tests/stylesheet/mocha.css',
@@ -26,7 +26,7 @@ module.exports = function(config) {
     // list of files to exclude
     exclude: [
       'gulpfile.js',
-      'main.js'
+      'csv.js'
     ],
 
 
