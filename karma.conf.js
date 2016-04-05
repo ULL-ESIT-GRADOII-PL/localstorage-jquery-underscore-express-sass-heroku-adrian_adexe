@@ -26,7 +26,7 @@ module.exports = function(config) {
     // list of files to exclude
     exclude: [
       'gulpfile.js',
-      'csv.js'
+      'main.js'
     ],
 
 
