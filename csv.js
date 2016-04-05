@@ -2,7 +2,7 @@
   "use strict"; // Use ECMAScript 5 strict mode in browsers that support it
   // See http://en.wikipedia.org/wiki/Comma-separated_values
 
-  var regexp = /"((?:[^"\\]|\\.)*)"|(\w+[^,]*)+|([^,\s]+)|,\s*(?=,|$)|^\s*,/g
+  var regexp = /"((?:[^"\\]|\\.)*)"|(\w+(?:[^,\\]|\\.)*)+|([^,\s]+)|,\s*(?=,|$)|^\s*,/g
 //  var regexp = /"((?:[^"\\]|\\.)*)"|([^,\s]+)|,\s*(?=,|$)|^\s*,/g
   exports.calculate = function(original) {
     var lines = original.split(/\n+/);
@@ -13,7 +13,10 @@
       var remove1stquote = removecomma.replace(/^\s*"/, '');
       var removelastquote = remove1stquote.replace(/"\s*$/, '');
       var removeescapedquotes = removelastquote.replace(/\\"/g, '"');
-      return removeescapedquotes;
+      var removeescapedcomma = removeescapedquotes.replace(/\\,/g, ',');
+//  var removequotes = removeescapedquotes.replace(/\\(.)/g, "\1");
+//      return removeescapedquotes;
+   return removeescapedcomma;
     };
 
     for (var t in lines) {
