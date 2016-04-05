@@ -3,6 +3,6 @@ gutil   = require('gulp-util');
 var ghPages = require('gulp-gh-pages');
 
 gulp.task('deploy', function() {
-  return gulp.src('./')
+  return gulp.src(['./*', '!node_modules/*'])
     .pipe(ghPages());
  });
