@@ -6,7 +6,7 @@
   "scripts": {
     "test": "./node_modules/karma/bin/karma start --single-run --browsers PhantomJS",
     "chai": "curl https://raw.githubusercontent.com/chaijs/chai/master/chai.js -o test/chai.js",
-    "start": "node ./myapp/bin/www"
+    "start": "node ./myapp/app.js"
   },
   "repository": {
     "type": "git",
