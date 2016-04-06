@@ -8,13 +8,13 @@ var _ = require('underscore');
 app.set('port', (process.env.PORT || 3000));
 
 // view engine setup
-app.set('views', path.join(__dirname, '/myapp/views'));
+app.set('views', path.join(__dirname, '/views'));
 app.set('view engine', 'jade');
 //app.set('layout', 'myLayout') // defaults to 'layout'  '
 
 //app.use(expressLayouts);
 //app.use(express.static('public'));
-app.use(express.static(__dirname + '/'));
+app.use(express.static(__dirname + '/public'));
 
 app.get('/', function (req, res) {
   res.render('index');
