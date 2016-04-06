@@ -15,7 +15,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [ // ficheros PARA LA RAMA master | ficheros PARA LA RAMA gh-pages
-      '*.js',
+      'csv.js',
       'tests/javascript/*.js','javascript/*.js',
       'tests/testIndex/index.html','tests/testIndex/index.html',
       'tests/stylesheet/mocha.css','tests/stylesheet/mocha.css',
@@ -25,9 +25,7 @@ module.exports = function(config) {
 
     // list of files to exclude
     exclude: [
-      'gulpfile.js',
-      'main.js',
-      'app.js'
+
     ],
 
 
