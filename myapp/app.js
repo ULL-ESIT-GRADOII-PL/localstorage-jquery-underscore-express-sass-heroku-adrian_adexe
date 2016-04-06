@@ -17,7 +17,7 @@ app.set('view engine', 'jade');
 app.use(express.static(__dirname + '/'));
 
 app.get('/', function (req, res) {
-  res.render('index', { title: 'Analizador Léxico' });
+  res.render('index');
 })
 
 app.listen(app.get('port'), function () {
