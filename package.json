@@ -20,6 +20,7 @@
   "homepage": "https://github.com/ULL-ESIT-GRADOII-PL/localstorage-jquery-underscore-express-sass-heroku-adrian_adexe",
   "devDependencies": {
     "blanket": "^1.2.3",
+    "body-parser": "^1.15.0",
     "chai": "^3.5.0",
     "express-generator": "^4.13.1",
     "gulp": "^3.9.1",
