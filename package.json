@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "test": "./node_modules/karma/bin/karma start --single-run --browsers PhantomJS",
-    "chai": "curl https://raw.githubusercontent.com/chaijs/chai/master/chai.js -o test/chai.js"
+    "chai": "curl https://raw.githubusercontent.com/chaijs/chai/master/chai.js -o test/chai.js",
+    "start": "node ./app.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,9 @@
   },
   "homepage": "https://github.com/ULL-ESIT-GRADOII-PL/localstorage-jquery-underscore-express-sass-heroku-adrian_adexe",
   "devDependencies": {
+    "blanket": "^1.2.3",
     "chai": "^3.5.0",
+    "express-generator": "^4.13.1",
     "gulp": "^3.9.1",
     "gulp-gh-pages": "^0.5.4",
     "gulp-util": "^3.0.7",
@@ -29,7 +32,12 @@
     "karma-mocha": "^0.2.2",
     "karma-phantomjs-launcher": "^1.0.0",
     "mocha": "^2.4.5",
-    "phantomjs-prebuilt": "^2.1.7",
+    "node-sass": "^3.4.2",
+    "node-static": "^0.7.7",
+    "phantomjs-prebuilt": "^2.1.7"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
     "underscore": "^1.8.3"
-  }
+   }
 }

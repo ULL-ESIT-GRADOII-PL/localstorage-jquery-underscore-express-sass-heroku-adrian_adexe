@@ -1,0 +1,82 @@
+//General color
+$bgColor: scale-color(blue, $lightness: 80%);
+$letterColor: black !default;
+$borderColor: white !default;
+//Fonts
+$fontFamily: Arial, sans-serif;
+$fontSize: 1.5em !default;
+$h1FontSize: $fontSize * 2;
+$h1FontAlign: center;
+//table align
+$tableBorder: inset !default;
+$tableVerAlign: top;
+$tableTextAlign: right;
+$finalTableColor: blue;
+//TextArea and input
+$taBorder: outset;
+$iTextAlign: right;
+$iBorder: none;
+//Color error
+$errorColor: red;
+
+html {
+  font-size: $fontSize;
+  font-family: $fontFamily;
+  color: $letterColor;
+}
+
+body {
+  background-color: $bgColor;
+}
+
+h1 {
+  text-align: $h1FontAlign;
+  font-size: $h1FontAlign;
+}
+
+th, td {
+  vertical-align: $tableVerAlign;
+  text-align: $tableTextAlign;
+}
+
+table {
+  border: $tableBorder;
+  border-color: $borderColor;
+  .center {
+     margin-left: auto;
+     margin-right: auto;
+   }
+}
+
+tr{
+  .error{
+    background-color: $errorColor;
+  }
+
+  &:nth-child(odd) {
+    background-color:#eee;
+  }
+
+  &:nth-child(even){
+    background-color:#00FF66;
+  }
+}
+
+input{
+  text-align: $iTextAlign;
+  border: $iBorder;
+}
+
+textarea {
+  border: $taBorder;
+  border-color: $borderColor;
+}
+
+#finaltable {
+  &:hover {
+    td {
+      margin: auto;
+      background-color: $finalTableColor;
+    }
+  }
+}
